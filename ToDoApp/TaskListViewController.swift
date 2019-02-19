@@ -49,6 +49,7 @@ class TaskListViewController: UIViewController {
     let data = self.tasks.map {
       [
         "title": $0.title,
+        "note": $0.note,
         "done": $0.done,
         ]
     }
@@ -63,13 +64,16 @@ class TaskListViewController: UIViewController {
     guard let data = userDefaults.object(forKey: TodoboxTasksUserDefaultsKey) as? [[String: AnyObject]] else {
       return
     }
-
+    
     self.tasks = data.compactMap {
-      guard let title = $0["title"] as? String else {
-        return nil
-      }
-      let done = $0["done"]?.boolValue == true
-      return Task(title: title, done: done)
+        guard let title = $0["title"] as? String else {
+            return nil
+        }
+
+        let note = $0["note"] as? String ?? ""
+        let done = $0["done"]?.boolValue == true
+        
+        return Task(title: title, note: note, done: done)
     }
   }
 
