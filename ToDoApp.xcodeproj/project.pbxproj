@@ -14,12 +14,12 @@
 		CE85797F221CA8CB00204424 /* ToDoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85797E221CA8CB00204424 /* ToDoAppTests.swift */; };
 		CE85798A221CA8CB00204424 /* ToDoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE857989221CA8CB00204424 /* ToDoAppUITests.swift */; };
 		CE857998221CA8FF00204424 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE857997221CA8FF00204424 /* AppDelegate.swift */; };
-		CE85799C221CA90B00204424 /* AddTodoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE857999221CA90B00204424 /* AddTodoViewController.swift */; };
 		CE85799D221CA90B00204424 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85799A221CA90B00204424 /* InitialViewController.swift */; };
-		CE85799E221CA90B00204424 /* TodoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE85799B221CA90B00204424 /* TodoListViewController.swift */; };
 		CE8579A0221CA91E00204424 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE85799F221CA91E00204424 /* Main.storyboard */; };
 		CE8579A3221CAA1300204424 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE8579A1221CAA1300204424 /* GoogleService-Info.plist */; };
-		CE8579A4221CAA1300204424 /* TodoList.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8579A2221CAA1300204424 /* TodoList.swift */; };
+		CE8579A6221CBB4800204424 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8579A5221CBB4800204424 /* TaskListViewController.swift */; };
+		CE8579A8221CBB5100204424 /* TaskEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8579A7221CBB5100204424 /* TaskEditorViewController.swift */; };
+		CE8579AA221CBCE900204424 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8579A9221CBCE900204424 /* Task.swift */; };
 		F645DB16D6EDC47D67DB986C /* Pods_ToDoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2E9949F3B5811B7D77AB96E5 /* Pods_ToDoApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,12 +61,12 @@
 		CE857989221CA8CB00204424 /* ToDoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoAppUITests.swift; sourceTree = "<group>"; };
 		CE85798B221CA8CB00204424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CE857997221CA8FF00204424 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CE857999221CA90B00204424 /* AddTodoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddTodoViewController.swift; sourceTree = "<group>"; };
 		CE85799A221CA90B00204424 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
-		CE85799B221CA90B00204424 /* TodoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoListViewController.swift; sourceTree = "<group>"; };
 		CE85799F221CA91E00204424 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		CE8579A1221CAA1300204424 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		CE8579A2221CAA1300204424 /* TodoList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoList.swift; sourceTree = "<group>"; };
+		CE8579A5221CBB4800204424 /* TaskListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		CE8579A7221CBB5100204424 /* TaskEditorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskEditorViewController.swift; sourceTree = "<group>"; };
+		CE8579A9221CBCE900204424 /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,15 +146,15 @@
 			isa = PBXGroup;
 			children = (
 				CE857997221CA8FF00204424 /* AppDelegate.swift */,
-				CE857999221CA90B00204424 /* AddTodoViewController.swift */,
+				CE8579A5221CBB4800204424 /* TaskListViewController.swift */,
+				CE8579A7221CBB5100204424 /* TaskEditorViewController.swift */,
 				CE85799A221CA90B00204424 /* InitialViewController.swift */,
-				CE85799B221CA90B00204424 /* TodoListViewController.swift */,
+				CE8579A9221CBCE900204424 /* Task.swift */,
 				CE85799F221CA91E00204424 /* Main.storyboard */,
 				CE857970221CA8CB00204424 /* Assets.xcassets */,
 				CE857972221CA8CB00204424 /* LaunchScreen.storyboard */,
 				CE857975221CA8CB00204424 /* Info.plist */,
 				CE8579A1221CAA1300204424 /* GoogleService-Info.plist */,
-				CE8579A2221CAA1300204424 /* TodoList.swift */,
 			);
 			path = ToDoApp;
 			sourceTree = "<group>";
@@ -436,11 +436,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CE8579A4221CAA1300204424 /* TodoList.swift in Sources */,
-				CE85799E221CA90B00204424 /* TodoListViewController.swift in Sources */,
+				CE8579A8221CBB5100204424 /* TaskEditorViewController.swift in Sources */,
 				CE85799D221CA90B00204424 /* InitialViewController.swift in Sources */,
-				CE85799C221CA90B00204424 /* AddTodoViewController.swift in Sources */,
+				CE8579AA221CBCE900204424 /* Task.swift in Sources */,
 				CE857998221CA8FF00204424 /* AppDelegate.swift in Sources */,
+				CE8579A6221CBB4800204424 /* TaskListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

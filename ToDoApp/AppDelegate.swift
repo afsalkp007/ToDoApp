@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  TodoList
+//  TodoApp
 //
 //  Created by User on 2/19/19.
 //  Copyright © 2019 User. All rights reserved.
